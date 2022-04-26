@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+height: auto;
+width: 99.5%;
+margin-left: 15px;
+background-image: url(https://cdn.wallpapersafari.com/67/35/GDWrU0.jpg);
+background-size: cover;
+}
+
+
+.arrow-drop {
+color: yellow;
+}
+
+.logo {
+  display: flex;
+}
+
+.row {
+width: 98%;
+height: 100%;
+}
+
+.finder {
+  font-weight: 800;
+  width: 50px;
+}
+
+
+.finder1 {
+  font-weight: 800;
+  width: 50px;
+color: rgb(223, 218, 218);
+}
+
+.glyphicon-map-marker {
+color: blue;
+}
+span {
+  font-size: 30px;
+}
+
+label {
+color: rgb(175, 172, 172);
+}
+
+.text-secondary {
+margin-left: 30px;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: var(--bs-gray);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+footer {
+margin-right: 30px;
+width: 99%;
+height: 60px;
+position: relative;
+background-repeat: no-repeat;
+background-size: 100%;
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoydBM1q-F_LnNAo9GLaXa-SJTI6tVZHkzdg&usqp=CAU);
+}
+
+header {
+width: 98%;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 1rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 48rem;
+  width: 98%;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 50rem;
+}
+
+

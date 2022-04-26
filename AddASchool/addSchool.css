@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url(https://applywave.com/wp-content/uploads/2020/01/University-of-Manitoba-gallery4.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+background-color: black;
+  margin-top: 30px;
+}
+
+.container {
+  width: 400px;
+  height: 610px;
+  /* background-color: yellow; */
+  background-image: url(https://www.canadavisa.com/images/university-of-manitoba.jpg);
+  border-radius: 5%;
+
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.finder {
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  color: white;
+}
+
+.glyphicon-map-marker {
+  font-size: 25px;
+  color: rgb(9, 9, 181);
+}
+
+.btn-primary {
+margin-top: 20px;
+}
+
+.form-outline {
+margin-bottom: 5px;
+}

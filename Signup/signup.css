@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(https://i.pinimg.com/originals/04/ff/b9/04ffb96016eaba8635718f0f85bbbb99.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+}
+
+.container {
+  width: 400px;
+  height: 510px;
+  background-color: aqua;
+  border-radius: 5%;
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.finder {
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  color: black;
+}
+
+.glyphicon-map-marker {
+  font-size: 25px;
+  color: rgb(9, 9, 181);
+}
+
+.fw-normal {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.form-label {
+  display: flex;
+  justify-content: flex-start;
+}

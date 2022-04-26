@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(https://www.wallpaperflare.com/static/337/626/538/ruins-abandoned-dark-classroom-wallpaper.jpg);
+}
+
+.finder1 {
+  font-weight: 800;
+  width: 50px;
+  color: rgb(223, 218, 218);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.finder {
+font-weight: 800;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 60px;
+color: black;
+margin-top: 20px;
+}
+
+.glyphicon-map-marker {
+font-size: 25px;
+color: rgb(9, 9, 181);
+}
+
+.fw-normal {
+margin-top: 5px;
+font-size: 20px;
+}
+
+.form-label {
+display: flex;
+justify-content: flex-start;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-check-label {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.container {
+width: 350px;
+height: 420px;
+margin-left: 500px;
+background-color: khaki;
+border-radius: 5%;
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+margin-bottom: 20px;
+}
+
+
