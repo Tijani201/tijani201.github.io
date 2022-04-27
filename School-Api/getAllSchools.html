@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="getAllSchools.css" />
-  <title>Fetch School-Finder Api</title>
+  <title>School-Finder Api</title>
 </head>
 
 <body class="text-center">
@@ -29,24 +28,28 @@
             <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
             <li><a href="#" class="nav-link px-2 text-white">Courses</a></li>
             <li><a href="#" class="nav-link px-2 text-white">Subjects</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="addASchool.html" class="nav-link px-2 text-white">Add A School</a></li>
             <li><a href="#" class="nav-link px-2 text-white">About</a></li>
           </ul>
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
             <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
           </form>
-             <div class="flex-shrink-0 dropdown">
-          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://res.cloudinary.com/dmhwf8o98/image/upload/v1650995492/Snapchat-600024117_of9tmz.jpg" alt="Tj" width="35" height="35" class="rounded-circle">
-          </a>
-          <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
-        </div>
+          <div class="flex-shrink-0 dropdown">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://res.cloudinary.com/dmhwf8o98/image/upload/v1650995492/Snapchat-600024117_of9tmz.jpg"
+                alt="Tj" width="35" height="35" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
           <!-- <div class="text-end">
            <button onclick="location.href ='signin.html'" type="button" class="btn btn-outline-light me-2">Login</button>
             <button onclick="location.href = 'signup.html'" type="button"  class="btn btn-warning">Sign-up</button>
@@ -96,8 +99,10 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 school-container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id = "school-container">
     </div>
+
     <div class="footer-container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
@@ -120,7 +125,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script src="getAlllSchools.js"></script>
+  <script src="getAllSchools.js"></script>
 </body>
 
 </html>

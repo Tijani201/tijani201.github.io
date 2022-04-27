@@ -5,33 +5,34 @@
 }
 
 body {
-  /* background-image: url(https://applywave.com/wp-content/uploads/2020/01/University-of-Manitoba-gallery4.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
-background-color: black;
+  background-color: black;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.container {
+form {
   width: 400px;
-  height: 610px;
-  /* background-color: yellow; */
-  background-image: url(https://www.canadavisa.com/images/university-of-manitoba.jpg);
+  height: 600px;
+  background-image: url(https://c0.wallpaperflare.com/preview/147/460/854/gray-concrete-building.jpg);
   border-radius: 5%;
-
 }
 
 h3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
+color: azure;
 }
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 .finder {
@@ -49,9 +50,9 @@ h3 {
 }
 
 .btn-primary {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 .form-outline {
-margin-bottom: 5px;
+  margin-bottom: 6px;
 }

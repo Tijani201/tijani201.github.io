@@ -9,7 +9,7 @@ var founded = document.getElementById("founded").value;
 var total_enrollment = document.getElementById("total_enrollment").value;
 var short_desc = document.getElementById("short_desc").value;
 
-var form = document.getElementById("container");
+var form = document.getElementById("form");
 const button = document.getElementById("btn-submit");
 
 let apiUrl = "https://sch-finder-api.herokuapp.com";
@@ -42,7 +42,7 @@ function addASchool(newData) {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
       
-    let schoolData = {
+    let newData = {
         name : document.getElementById('name').value,
         country : document.getElementById('country').value,
         city : document.getElementById('city').value,
@@ -54,7 +54,7 @@ form.addEventListener("submit", (e) => {
         total_enrollment : document.getElementById('total_enrollment').value,
         short_desc : document.getElementById('short_desc').value
     }
-      addASchool(schoolData);    
+      addASchool(newData);    
 })
 
 function saveToken(token) {
@@ -63,5 +63,5 @@ function saveToken(token) {
 }
 
   function reDirect() {
-    window.location.href = "../GetAllSchools/getAllSchools.html";
+    window.location.href = "./getAllSchools.html";
   }
