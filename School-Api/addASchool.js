@@ -10,58 +10,60 @@ var total_enrollment = document.getElementById("total_enrollment").value;
 var short_desc = document.getElementById("short_desc").value;
 
 var form = document.getElementById("form");
-const button = document.getElementById("btn-submit");
+const button = document.getElementById("submit");
 
 let apiUrl = "https://sch-finder-api.herokuapp.com";
 
-
 function addASchool(newData) {
-    const token = window.localStorage.getItem('token')
-    console.log(token)
-    fetch(`${apiUrl}/api/schools/add`, {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-        "Authorization": `Bearer ${token}`
-      },
-      body:JSON.stringify(newData)
-    })
-      .then((response) => {if (response.ok) {
-      return response.json()
+  const token = window.localStorage.getItem("token");
+  console.log(token);
+  fetch(`${apiUrl}/api/schools/add`, {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify(newData),
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
       }
-      throw new Error ("Something went wrong")
-    })    
+      throw new Error("Something went wrong");
+    })
     .then((responseJson) => {
-      reDirect()
+      reDirect();
     })
     .catch((error) => {
-    console.log(error)
-    })
-  }
+      console.log(error);
+    });
+}
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
-      
-    let newData = {
-        name : document.getElementById('name').value,
-        country : document.getElementById('country').value,
-        city : document.getElementById('city').value,
-        address : document.getElementById('address').value,
-        type : document.getElementById('type').value,
-        tuition_fee_range : document.getElementById('tuition_fee_range').value,
-        ownership : document.getElementById('ownership').value,
-        founded : document.getElementById('founded').value,
-        total_enrollment : document.getElementById('total_enrollment').value,
-        short_desc : document.getElementById('short_desc').value
-    }
-      addASchool(newData);    
-})
+  e.preventDefault();
+
+  let schoolData = {
+    name: document.getElementById("name").value,
+    country: document.getElementById("country").value,
+    city: document.getElementById("city").value,
+    address: document.getElementById("address").value,
+    type: document.getElementById("type").value,
+    tuition_fee_range: document.getElementById("tuition_fee_range").value,
+    ownership: document.getElementById("ownership").value,
+    founded: document.getElementById("founded").value,
+    total_enrollment: document.getElementById("total_enrollment").value,
+    short_desc: document.getElementById("short_desc").value,
+  };
+  addASchool(schoolData);
+});
 
 function saveToken(token) {
   console.log(token);
   window.localStorage.setItem("token", token);
 }
 
-  function reDirect() {
-    window.location.href = "./getAllSchools.html";
-  }
+function reDirect() {
+  window.location.href = "./getAllSchools.html";
+console.log("school added successfully")
+}
+

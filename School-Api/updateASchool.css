@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-image: url(https://c0.wallpaperflare.com/preview/147/460/854/gray-concrete-building.jpg);
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 400px;
+  height: 600px;
+  background-color: black;
+  /* background-image: url(https://c0.wallpaperflare.com/preview/147/460/854/gray-concrete-building.jpg); */
+  border-radius: 5%;
+}
+
+.dropdown-toggle {
+color: aliceblue;
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+color: azure;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.finder {
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  color: white;
+}
+
+.glyphicon-map-marker {
+  font-size: 25px;
+  color: rgb(9, 9, 181);
+}
+
+.btn-primary {
+  margin-top: 15px;
+}
+
+.form-outline {
+  margin-bottom: 6px;
+}
+
+
