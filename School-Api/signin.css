@@ -25,29 +25,31 @@ body {
 }
 
 .finder {
-font-weight: 800;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 60px;
-color: black;
-margin-top: 20px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  color: wheat;
+  margin-top: 20px;
 }
 
 .glyphicon-map-marker {
-font-size: 25px;
-margin-top: 20px;
-color: rgb(9, 9, 181);
+  font-size: 25px;
+  margin-top: 20px;
+  color: rgb(9, 9, 181);
 }
 
 .fw-normal {
-margin-top: 5px;
-font-size: 20px;
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 .form-label {
-display: flex;
-justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  color: blanchedalmond;
+  opacity: 0.5;
 }
 
 .form-signin .checkbox {
@@ -58,13 +60,13 @@ justify-content: flex-start;
   z-index: 2;
 }
 
-.form-signin input[type="email"] {
+.form-signin input[type='email'] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.form-signin input[type="password"] {
+.form-signin input[type='password'] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -75,19 +77,19 @@ justify-content: flex-start;
   justify-content: flex-start;
 }
 
-
 .container {
-width: 350px;
-height: 420px;
-margin-left: 500px;
-background-color: khaki;
-border-radius: 5%;
+  width: 350px;
+  height: 420px;
+  margin-left: 500px;
+  background-image: url(https://wallpapercave.com/wp/wp2486457.jpg);
+  border-radius: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h3 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-margin-bottom: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 20px;
+  color: bisque;
 }
-
-

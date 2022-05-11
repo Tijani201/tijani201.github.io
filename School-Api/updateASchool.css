@@ -7,36 +7,37 @@
 body {
   background-repeat: no-repeat;
   background-size: cover;
-   background-image: url(https://c0.wallpaperflare.com/preview/147/460/854/gray-concrete-building.jpg);
+  background-image: url(https://r1.ilikewallpaper.net/iphone-11-wallpapers/download/80321/iPhone-11-Stock-Wallpaper-1-iphone-11-wallpaper-ilikewallpaper_com_828x1792.jpg);
   margin-top: 30px;
   display: flex;
   justify-content: center;
 }
 
-.container{
+.container {
   width: 400px;
   height: 600px;
-  background-color: black;
-  /* background-image: url(https://c0.wallpaperflare.com/preview/147/460/854/gray-concrete-building.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://www.whatspaper.com/wp-content/uploads/2021/07/dark-wallpaper-whatspaper-10.jpg);
   border-radius: 5%;
 }
 
 .dropdown-toggle {
-color: aliceblue;
+  color: aliceblue;
 }
 
 h3 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
-color: azure;
+  color: azure;
+  margin-top: 3px;
 }
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
   margin-top: 10px;
 }
 
@@ -46,7 +47,7 @@ color: azure;
   justify-content: center;
   align-items: center;
   width: 60px;
-  color: white;
+  color: aliceblue;
 }
 
 .glyphicon-map-marker {
@@ -54,12 +55,11 @@ color: azure;
   color: rgb(9, 9, 181);
 }
 
-.btn-primary {
-  margin-top: 15px;
+.fw-normal {
+  margin-top: 5px;
+  font-size: 20px;
 }
 
-.form-outline {
-  margin-bottom: 6px;
+input {
+  margin: 3px;
 }
-
-

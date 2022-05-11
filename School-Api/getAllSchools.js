@@ -1,17 +1,16 @@
-const schoolsList = document.getElementById("school-container");
+const schoolsList = document.getElementById('school-container')
 
-let apiUrl = "https://sch-finder-api.herokuapp.com";
+let apiUrl = 'https://sch-finder-api.herokuapp.com'
 
 function fetchAllSchools() {
   fetch(`${apiUrl}/api/schools`)
     .then((response) => response.json())
-    .then((data) => renderData(data));
+    .then((data) => renderData(data))
 }
 
-fetchAllSchools();
+fetchAllSchools()
 
 function renderData(schools) {
-  // console.log(schools);
   let list = schools
     .map(
       (schools, i) =>
@@ -29,8 +28,8 @@ function renderData(schools) {
                              <p class="card-text"> ${schools.short_desc} </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="getASchool.html?id=${schools.id}" class="btn btn-sm btn-outline-secondary">More info</a>
+                  <a href="updateASchool.html?id=${schools.id}" class="btn btn-sm btn-outline-secondary">Update</a>
                   <button type="button" onclick="deleteASchool(${schools.id})" id="" class="btn btn-sm btn-outline-secondary">Delete</button>
                 </div>
                <small class="text-muted">${schools.tuition_fee_range}</small>
@@ -40,36 +39,42 @@ function renderData(schools) {
         </div>
 `
     )
-    .join(" ");
-  schoolsList.innerHTML = list;
+    .join(' ')
+  schoolsList.innerHTML = list
 }
 
 const deleteASchool = (id) => {
   const token = window.localStorage.getItem('token')
+  console.log(id)
   console.log(token)
   fetch(`${apiUrl}/api/schools/${id}`, {
-    method: "DELETE",
+    method: 'DELETE',
     headers: {
-      "Content-type": "application/json; charset=UTF-8",
-      "Authorization": `Bearer ${token}`
-    },
+      'Content-type': 'application/json; charset=UTF-8',
+      Authorization: `Bearer ${token}`
+    }
+  }).then((responseJson) => {
+    console.log('School Deleted Successfully')
+    reDirect()
   })
-    .then((responseJson) => {
-      console.log("School Deleted Successfully")
-      fetchAllSchools();
-    })
 }
 
-// // const deleteASchool = (id) => {
-// // const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJDb2tlciIsImxhc3ROYW1lIjoiQWRla3VubGUiLCJlbWFpbCI6ImNvYWRlZGlia0BnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpZCI6NjgsImlhdCI6MTY1MDkxOTUxOH0.3YGzbIiaROinViIurQXJmyq66LqULpNgbxW2BUL_J7g"
-// //   fetch(`${apiUrl}/api/schools/${id}`, {
-// //     method: "DELETE",
-// //     headers: new Headers({
-// //       Authorization: `Bearer ${token}`,
-// //     }),
-// //   })
-// //     .then((response) => response.json())
-// //     .then((data) => {
-// //       console.log("School Deleted Successfully");
-// //     });
-// // };
+function reDirect() {
+  window.location.href = './getAllSchools.html'
+}
+
+// const deleteASchool = (id) => {
+//   const token = window.localStorage.getItem('token')
+//   console.log(token)
+//   fetch(`${apiUrl}/api/schools/${id}`, {
+//     method: "DELETE",
+//     headers: {
+//       "Content-type": "application/json; charset=UTF-8",
+//       "Authorization": `Bearer ${token}`
+//     },
+//   })
+//     .then((responseJson) => {
+//       console.log("School Deleted Successfully")
+//       fetchAllSchools();
+//     })
+// }

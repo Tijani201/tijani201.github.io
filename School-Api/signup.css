@@ -18,14 +18,18 @@ body {
 .container {
   width: 400px;
   height: 510px;
-  background-color: aqua;
+  background-image: url(https://images.unsplash.com/photo-1476370648495-3533f64427a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRhcmt8ZW58MHx8MHx8&w=1000&q=80);
   border-radius: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h3 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: beige;
+  margin-top: 2px;
 }
 
 .logo {
@@ -41,7 +45,7 @@ font-size: 20px;
   justify-content: center;
   align-items: center;
   width: 60px;
-  color: black;
+  color: aliceblue;
 }
 
 .glyphicon-map-marker {
@@ -57,4 +61,6 @@ font-size: 20px;
 .form-label {
   display: flex;
   justify-content: flex-start;
+  color: azure;
+  opacity: 0.5;
 }
